@@ -1,4 +1,4 @@
-package fr.esisar;
+package Exercice2.fr.esisar;
 
 import java.awt.Color;
 import java.net.DatagramPacket;
