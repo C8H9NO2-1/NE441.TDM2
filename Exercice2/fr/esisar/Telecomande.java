@@ -35,10 +35,11 @@ public class Telecomande {
             String message = new String(bufR, dpR.getOffset(), dpR.getLength());
             System.out.println("Changement de couleur " + message);
  
-            if (message.equals("red\n")) {
+            //? We need to take into account the \n after the "red"
+            if (message.length() == 4 && message.substring(0,3).equals("red")) {
                 frame.getContentPane().setBackground(Color.red);
                 frame.setVisible(true);
-            } else if (message.equals("green\n")) {
+            } else if (message.length() == 6 && message.substring(0,5).equals("green")) {
                 frame.getContentPane().setBackground(Color.green);
                 frame.setVisible(true);
             } else {
