@@ -13,7 +13,12 @@ public class Telecomande {
         t.execute();
     }
 
-    private void execute() throws Exception {
+    /**
+     * Permet d'attendre les ordres depuis la télécommande UDP
+     *
+     * @author Me
+     */
+    public void execute() throws Exception {
         JFrame frame = new JFrame("Chenillard");
         frame.setSize(300, 300);
 
